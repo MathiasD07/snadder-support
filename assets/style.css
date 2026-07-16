@@ -118,6 +118,24 @@ h1 {
   line-height: 1.55;
 }
 
+.app-store-badge {
+  display: inline-block;
+  margin-top: 28px;
+  line-height: 0;
+}
+
+.app-store-badge:focus-visible {
+  border-radius: 10px;
+  outline: 3px solid var(--turquoise);
+  outline-offset: 5px;
+}
+
+.app-store-badge img {
+  display: block;
+  width: 190px;
+  height: auto;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -229,6 +247,13 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+footer .legal {
+  flex-basis: 100%;
+  margin-top: 4px;
+  font-size: 0.72rem;
+  line-height: 1.5;
 }
 
 @media (max-width: 660px) {
